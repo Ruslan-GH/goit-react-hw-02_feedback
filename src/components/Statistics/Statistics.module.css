@@ -1,7 +1,7 @@
 .FeedbackContainerButtons {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
+}
 .FeedbackButtonGood {
   background-color: green;
   color: white;

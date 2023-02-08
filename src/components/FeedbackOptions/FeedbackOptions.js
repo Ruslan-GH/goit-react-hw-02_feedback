@@ -8,16 +8,17 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => (
       <button
         key={option}
         className={s.FeedbackButton}
-        onClick={()=>onLeaveFeedback(option)}
+        onClick={() => onLeaveFeedback(option)}
       >
         {option}
-      </button>))}
+      </button>
+    ))}
   </ul>
 );
 
 FeedbackOptions.propTypes = {
-onLeaveFeedback: PropTypes.func.isRequired,
-options: PropTypes.arrayOf(PropTypes.string.isRequired),
+  onLeaveFeedback: PropTypes.func.isRequired,
+  options: PropTypes.arrayOf(PropTypes.string.isRequired),
 };
 
 export default FeedbackOptions;
